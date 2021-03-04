@@ -17,7 +17,7 @@ const ColorList = ({ colors }) => {
 				{Object.keys(colors).map((color) => (
 					<Link
 						className="ColorList-color"
-						style={{ backgroundColor: color, color: 'white' }}
+						style={{ backgroundColor: colors[color], color: 'white' }}
 						key={color}
 						to={`/colors/${color}`}
 					>
